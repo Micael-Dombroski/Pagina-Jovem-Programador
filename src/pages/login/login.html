@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../node-modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav id="cabecalho" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <!--a class fixed-top deixa a barra de navegação fixa-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColapsavel"
+            aria-controls="navbar-toggler" aria-expanded="false" aria-label="Botão sanduíche">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="mr-3 navegacao-index navbar-brand">Jovem Programador</a>
+            <div id="navbarColapsavel" class="collapse navbar-collapse">
+                <!--a class collapse esconde o elemento-->
+                <ul class="navbar-nav mr-auto navegacao-index">
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="../index.html">
+                            <div class="nav-link-text">
+                                Início
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#">
+                            <div class="nav-link-text">
+                                Sobre
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="#">
+                            <div class="nav-link-text">
+                                Contato
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="login/login.html">
+                            <div class="nav-link-text">
+                                Login
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="../index.html#inscricao" class="btn btn-success btn-lg font-weight-bold" type="button">Quero me inscrever</a>
+        </nav>
+    </header>
+    <main class="h-100">
+        <section class="d-flex align-items-center py-5" style="height: 97.5%;">
+            <div id="apresentacao" class="container h-auto p-5">
+                <h1 class="font-weight-bold mb-5 text-center">Faça seu Login</h1>
+                <div class="card-deck">
+                    <div class="card p-3">
+                        <form action="" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="inputEmail" class="sr-only">Digite seu Email</label>
+                                <input id="inputEmail" type="email" class="form-control" 
+                                placeholder="Digite o seu Email" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSenha" class="sr-only">Digite a sua Senha</label>
+                                <input id="inputSenha" type="password" class="form-control" 
+                                placeholder="Digite a sua Senha" required>
+                                <div class="invalid-feedback">
+                                    Preencha este campo corretamente.
+                                </div>
+                            </div>
+                            <button id="botaoEnviarDados" class="btn btn-success font-weight-bold d-block mx-auto" type="button">
+                                Entrar</button>
+                            <a href="#">Esqueceu a senha?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark position-fixed w-100 text-center">
+            <small>@2023 Equipe Jovem Programador. Todos os direitos Reservados</small>
+        </footer>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="../../../node-modules/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("Supi9bIx1QekrzUfN");
+       })();
+    </script>
+    <script src="login.js"></script>
+</body>
+</html>

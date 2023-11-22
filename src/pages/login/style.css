@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: auto;
+}
+
+#cabecalho {
+    color: white;
+}
+
+.nav-link-text {
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+main {
+    background-image: url('../../assets/img/happy-meeting.jpg');
+    background-position: 75% 75%;
+    height: 70%;
+    color: white;
+}
+#apresentacao {
+    background-color: rgba(3, 3, 3, 0.726);
+    border: 2px solid white;
+    border-radius: 10px;
+    max-width: 700px;
+}

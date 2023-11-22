@@ -29,7 +29,7 @@ footer {
 }
 
 main {
-    background-image: url('../../assets/img/happy-meeting.jpg');
+    background-image: url('../assets/img/happy-meeting.jpg');
     background-position: 75% 75%;
     height: 70%;
     color: white;
